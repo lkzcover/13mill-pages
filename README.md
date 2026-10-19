@@ -13,7 +13,8 @@ python3 -m http.server 8091 --bind 127.0.0.1
 ```
 
 Open http://127.0.0.1:8091/privacy/. The language switch updates the `lang` query
-parameter; no local storage is used. Without JavaScript, the Russian text remains visible.
+parameter; no local storage is used. English is the default regardless of browser language. Use `?lang=ru` for a direct
+Russian link. Without JavaScript, the English text remains visible.
 
 ## GitHub Pages
 
