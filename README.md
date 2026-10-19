@@ -1,6 +1,9 @@
 # 13MILL legal pages
 
-Standalone static files for https://legal.13mill.com/privacy/.
+Standalone static pages for 13MILL:
+
+- Privacy policy: https://legal.13mill.com/privacy/
+- App support: https://legal.13mill.com/support/
 The privacy page contains Russian and English versions and contact information for
 Pavel Novokshonov: team@13mill.com. No build, dependencies, analytics or backend.
 
@@ -37,3 +40,8 @@ account's Pages settings using the TXT record GitHub provides.
 
 After deployment, verify HTTPS, RU/EN switching and mailto links on mobile and
 desktop. Only then add the live URL to the app and App Store Connect.
+
+## App Store Connect
+
+Use https://legal.13mill.com/support/ as the Support URL and
+https://legal.13mill.com/privacy/ as the Privacy Policy URL.

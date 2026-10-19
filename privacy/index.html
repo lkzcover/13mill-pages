@@ -78,7 +78,7 @@ a:focus-visible,button:focus-visible { outline:2px solid currentColor; outline-o
       </div>
     </main>
   </div>
-  <footer><span>© 2026 13MILL</span><span id="legal-footer">The latest version is available on this page.</span></footer>
+  <footer><span>© 2026 13MILL · <a href="../support/" id="legal-support-link">Support</a></span><span id="legal-footer">The latest version is available on this page.</span></footer>
   <script>
     (() => {
       const root = document.getElementById('mill-legal-preview');
@@ -103,6 +103,9 @@ a:focus-visible,button:focus-visible { outline:2px solid currentColor; outline-o
         const languageCode = language === 'en' ? 'en' : 'ru';
         const text = copy[languageCode];
         content.lang = languageCode;
+        const supportLink = root.querySelector('#legal-support-link');
+        supportLink.textContent = languageCode === 'ru' ? 'Поддержка' : 'Support';
+        supportLink.href = '../support/' + (languageCode === 'ru' ? '?lang=ru' : '');
         document.documentElement.lang = languageCode;
         document.title = languageCode === 'ru' ? '13MILL — Политика конфиденциальности' : '13MILL — Privacy policy';
         ['eyebrow','title','date','lead','footer'].forEach(key => { root.querySelector('#legal-'+key).innerHTML = text[key]; });
